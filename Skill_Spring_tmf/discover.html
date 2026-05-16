@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SkillSpring - Discover Courses</title>
+
+    <!-- GOOGLE FONTS (UNCHANGED) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Figtree:wght@300..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="discover.css" />
+  </head>
+
+  <body>
+    <main class="mentor-page">
+      <!-- SIDEBAR (UNCHANGED) -->
+      <aside class="desktop-sidebar">
+        <div class="sidebar-logo">SkillSpring</div>
+
+        <nav class="sidebar-nav">
+          <a href="#" class="sidebar-link">
+            <img class="icons" src="./assets/icon/home.png" alt="" />
+            <span>Home</span>
+          </a>
+
+          <a href="discover.html" class="sidebar-link">
+            <img class="icons" src="./assets/icon/compass.png" alt="" />
+            <span>Courses</span>
+          </a>
+
+          <a href="view-mentor.html" class="sidebar-link active-sidebar">
+            <img class="icons" src="./assets/icon/hat.png" alt="" />
+            <span>Mentors</span>
+          </a>
+
+          <a href="profile.html" class="sidebar-link">
+            <img class="icons" src="./assets/icon/user.png" alt="" />
+            <span>Profile</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- MAIN -->
+      <div class="main-content">
+        <!-- HEADER -->
+        <header class="top-header">
+          <div class="logo">SkillSpring</div>
+
+          <div class="search-box">
+            <input type="text" placeholder="Search" />
+            <button class="search-btn">
+              <img src="./assets/icon/search.png" class="search-icon" />
+            </button>
+          </div>
+        </header>
+
+        <div class="desktop-topbar">
+          <span>Back</span>
+        </div>
+
+        <!-- HERO (UNCHANGED) -->
+        <section class="hero-section">
+          <h1>Discover Courses</h1>
+          <p>Explore in-demand skills and start learning today.</p>
+        </section>
+
+        <!-- FILTER TABS (UNCHANGED + SCROLL FRIENDLY) -->
+        <section class="filter-tabs">
+          <button class="tab active">All</button>
+          <button class="tab">Web Development</button>
+          <button class="tab">Product Design</button>
+          <button class="tab">Cyber Security</button>
+          <button class="tab">Data Science & Analytics</button>
+          <button class="tab">Product Management</button>
+        </section>
+
+        <!-- =========================
+     COURSES SECTION
+========================= -->
+
+        <section class="courses-section">
+          <p class="courses-count">Showing 4 courses</p>
+
+          <!-- CATEGORY HEADER -->
+
+          <div class="category-header">
+            <h2>Web Development</h2>
+
+            <span class="course-pill"> 2 courses </span>
+          </div>
+
+          <!-- COURSES GRID -->
+
+          <div class="courses-grid">
+            <!-- CARD 1 -->
+
+            <div class="course-card">
+              <!-- TOP -->
+
+              <div class="course-header-row">
+                <!-- LEFT -->
+
+                <div class="course-header-text">
+                  <span class="course-tag"> Web Development </span>
+
+                  <h3>Databases <span>| Kim Chase</span></h3>
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="course-icon">
+                  <img src="./assets/icon/book.png" alt="book icon" />
+                </div>
+              </div>
+
+              <!-- DESCRIPTION -->
+
+              <p class="course-description">
+                Store and manage application data using SQL or NoSQL databases.
+              </p>
+
+              <!-- IN PROGRESS BADGE -->
+
+              <!-- IN PROGRESS BADGE WRAPPER -->
+              <div class="badge-row">
+                <span class="progress-badge"> In Progress </span>
+              </div>
+
+              <!-- STATUS -->
+
+              <div class="course-status">
+                <p>12 modules</p>
+
+                <span>50%</span>
+              </div>
+
+              <!-- PROGRESS -->
+
+              <div class="progress-bar">
+                <div class="progress-fill fifty"></div>
+              </div>
+
+              <!-- BUTTON -->
+
+              <button class="course-btn">Continue Learning</button>
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="course-card">
+              <!-- TOP -->
+
+              <div class="course-header-row">
+                <!-- LEFT -->
+
+                <div class="course-header-text">
+                  <span class="course-tag"> Web Development </span>
+
+                  <h3>
+                    Version Control (Git & GitHub)
+                    <span>| Grey Lucas</span>
+                  </h3>
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="course-icon">
+                  <img src="./assets/icon/book.png" alt="book icon" />
+                </div>
+              </div>
+
+              <!-- DESCRIPTION -->
+
+              <p class="course-description shift">
+                Track code changes, collaborate with teams, and manage projects
+                professionally.
+              </p>
+
+              <!-- STATUS -->
+
+              <div class="course-status">
+                <p>12 modules</p>
+
+                <span>0%</span>
+              </div>
+
+              <!-- PROGRESS -->
+
+              <div class="progress-bar">
+                <div class="progress-fill zero"></div>
+              </div>
+
+              <!-- BUTTON -->
+
+              <button class="course-btn">Start Course</button>
+            </div>
+          </div>
+
+          <!-- CATEGORY HEADER -->
+
+          <div class="category-header-2">
+            <h2>Product design</h2>
+
+            <span class="course-pill"> 2 courses </span>
+          </div>
+
+          <!-- COURSES GRID -->
+
+          <div class="courses-grid shift">
+            <!-- CARD 1 -->
+
+            <div class="course-card">
+              <!-- TOP -->
+
+              <div class="course-header-row">
+                <!-- LEFT -->
+
+                <div class="course-header-text">
+                  <span class="course-tag"> Product design </span>
+
+                  <h3>Design Systems <span>| Samantha Jones</span></h3>
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="course-icon">
+                  <img src="./assets/icon/book.png" alt="book icon" />
+                </div>
+              </div>
+
+              <!-- DESCRIPTION -->
+
+              <p class="course-description shift">
+                UI Consistency, visual foundations, and designing reusable
+                components.
+              </p>
+
+              <!-- STATUS -->
+
+              <div class="course-status">
+                <p>10 modules</p>
+
+                <span>0%</span>
+              </div>
+
+              <!-- PROGRESS -->
+
+              <div class="progress-bar">
+                <div class="progress-fill zero"></div>
+              </div>
+
+              <!-- BUTTON -->
+
+              <button class="course-btn">Start Course</button>
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="course-card">
+              <!-- TOP -->
+
+              <div class="course-header-row">
+                <!-- LEFT -->
+
+                <div class="course-header-text">
+                  <span class="course-tag"> Product design </span>
+
+                  <h3>
+                    Prototyping
+                    <span>| John Carter</span>
+                  </h3>
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="course-icon">
+                  <img src="./assets/icon/book.png" alt="book icon" />
+                </div>
+              </div>
+
+              <!-- DESCRIPTION -->
+
+              <p class="course-description">
+                Create interactive mockups that simulate real user experiences.
+              </p>
+
+              <!-- IN PROGRESS BADGE -->
+
+              <!-- IN PROGRESS BADGE WRAPPER -->
+              <div class="badge-row">
+                <span class="progress-badge"> In Progress </span>
+              </div>
+
+              <!-- STATUS -->
+
+              <div class="course-status">
+                <p>12 modules</p>
+
+                <span>50%</span>
+              </div>
+
+              <!-- PROGRESS -->
+
+              <div class="progress-bar">
+                <div class="progress-fill fifty"></div>
+              </div>
+
+              <!-- BUTTON -->
+
+              <button class="course-btn">Continue Learning</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- MOBILE FOOTER (UNCHANGED) -->
+        <footer class="bottom-nav">
+          <div class="nav-item">
+            <img src="./assets/icon/home.png" />
+          </div>
+
+          <div class="nav-item">
+            <img src="./assets/icon/compass.png" />
+          </div>
+
+          <div class="nav-item active-nav">
+            <img src="./assets/icon/hat.png" />
+          </div>
+
+          <div class="nav-item">
+            <img src="./assets/icon/user.png" />
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <!-- SCRIPT -->
+
+    <script src="./discover.js"></script>
+  </body>
+</html>

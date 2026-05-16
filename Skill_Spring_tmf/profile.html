@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkillSpring - Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Inter:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="profile.css" />
+ 
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="logo"><img src="SkillSpring.png" alt="SkillSpring logo" /></div>
+        <nav aria-label="Sidebar navigation">
+          <ul>
+            <li>
+              <button class="nav-btn" type="button">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                <span class="nav-label">Home</span>
+              </button>
+            </li>
+            <li>
+              <button onclick="location.href='discover.html'" class="nav-btn" type="button">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                </svg>
+                <span class="nav-label">Courses</span>
+              </button>
+            </li>
+            <li>
+              <button onclick="location.href='view-mentor.html'" class="nav-btn" type="button">
+               <img src="Vector.png" alt="Mentors icon" width="27" height="22" aria-hidden="true" />
+                <span class="nav-label">Mentors</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-btn" type="button" aria-current="page">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+                <span class="nav-label active">Profile</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main>
+      <!-- Page header -->
+      <header class="page-header">
+        <h1 class="page-title">Profile</h1>
+        <div class="header-icons">
+          <button class="header-icon-btn" type="button" aria-label="Toggle theme">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/>
+              <line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+          </button>
+          <button class="header-icon-btn" type="button" aria-label="Logout">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+              <polyline points="16 17 21 12 16 7"/>
+              <line x1="21" y1="12" x2="9" y2="12"/>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Profile section -->
+      <section class="profile-section">
+        <div class="profile-center">
+          <div class="avatar" role="img" aria-label="Profile photo of Jin Fisher"></div>
+          <div class="profile-info">
+            <h2 class="profile-name">Jin Fisher</h2>
+            <p class="profile-email">jinfisher.x20@gmail.com</p>
+            <p class="profile-bio">"I love cats and I'm introverted"</p>
+          </div>
+        </div>
+
+        <button class="edit-btn" type="button">
+          <span>Edit Profile</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(15,23,42,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+          </svg>
+        </button>
+
+        <!-- Streak card -->
+        <div class="streak-card">
+          <div class="streak-card-body">
+            <img src="Screenshot 2026-05-16 172403.png" alt="Fire icon representing learning streak" width="42" height="54" aria-hidden="true" />
+      
+            <div class="streak-info">
+              <p class="streak-label">Learning Streak</p>
+              <p class="streak-value">7 Days</p>
+              <p class="streak-sub">Keep it up!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <section class="stats-grid" aria-label="Profile statistics">
+
+          <div class="stat-card stat-card--courses">
+            <div class="stat-card-body">
+              <div class="stat-inner">
+                <svg class="stat-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="44" height="44" rx="10" fill="#ede9fe"/>
+                  <path d="M12 14h20M12 20h14M12 26h16" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="31" cy="29" r="6" fill="#7c3aed"/>
+                  <path d="M29 29l1.5 1.5L34 26.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="stat-text">
+                  <span class="stat-value stat-value--courses">4</span>
+                  <span class="stat-label">Courses</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-card stat-card--progress">
+            <div class="stat-card-body">
+              <div class="stat-inner">
+                <svg class="stat-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="44" height="44" rx="10" fill="#f3e8ff"/>
+                  <circle cx="22" cy="22" r="9" stroke="#a855f7" stroke-width="2.5" fill="none" stroke-dasharray="20 37"/>
+                  <path d="M22 14v8l5 3" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="stat-text">
+                  <span class="stat-value stat-value--progress">2</span>
+                  <span class="stat-label">In Progress</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-card stat-card--done">
+            <div class="stat-card-body">
+              <div class="stat-inner">
+                <svg class="stat-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="44" height="44" rx="10" fill="#dcfce7"/>
+                  <circle cx="22" cy="22" r="9" stroke="#16a34a" stroke-width="2.5" fill="none"/>
+                  <path d="M17 22l3.5 3.5L27 18" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="stat-text">
+                  <span class="stat-value stat-value--done">2</span>
+                  <span class="stat-label">Completed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-card stat-card--time">
+            <div class="stat-card-body">
+              <div class="stat-inner">
+                <svg class="stat-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="44" height="44" rx="10" fill="#fee2e2"/>
+                  <circle cx="22" cy="22" r="9" stroke="#ef4444" stroke-width="2.5" fill="none"/>
+                  <path d="M22 15v7l4 2.5" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="stat-text">
+                  <span class="stat-value stat-value--time">72h</span>
+                  <span class="stat-label">Study Time</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </section>
+    </main>
+
+  </div>
+</body>
+</html>
+s

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="signin-signup.css">
+  <title>Sign Up / Sign In</title>
+</head>
+<body>
+  <div class="sign-con">
+    <div class="sign-up-in-header">
+      <h1 class="con-header">SkillSpring</h1>
+      <p class="con-text">Learn better, not harder.</p>
+    </div>
+
+    <div class="sign-up-toggle-con">
+      <div class="sign-up-toggle active" id="sign-up-toggle">Sign Up</div>
+      <div class="sign-in-toggle" id="sign-in-toggle">Sign In</div>
+    </div>
+
+    <div class="sign-up-in-content">
+      
+      <!-- Sign Up Form -->
+      <form id="sign-up" class="active">
+        <div class="nae-form-data-con">
+          <div class="form-data-alt">
+            <div class="data">
+              <label for="signup-firstname">First Name</label>
+              <input type="text" id="signup-firstname" class="input" placeholder="Jin Fisher">
+              <span class="errors" id="signup-name-error"></span>
+            </div>
+            <div class="data">
+              <label for="signup-email">Email</label>
+              <input type="email" id="signup-email" class="input" placeholder="jinfisher.x20@gmail.com">
+              <span class="errors" id="signup-email-error"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-data">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" class="input" placeholder="******">
+          <span class="errors" id="signup-password-error"></span>
+        </div>
+
+        <div class="form-data">
+          <button type="button" class="submit-btn" id="submitSignup">CREATE ACCOUNT</button>
+        </div>
+      </form>
+
+      <!-- Sign In Form -->
+      <form id="sign-in" class="sign-in-form">
+        <div class="form-data">
+          <label for="signin-email">Email</label>
+          <input type="email" id="signin-email" class="input" placeholder="jinfisher.x20@gmail.com">
+          <span class="errors" id="signin-email-error"></span>
+        </div>
+
+        <div class="form-data">
+          <label for="signin-password">Password</label>
+          <input type="password" id="signin-password" class="input" placeholder="******">
+          <span class="errors" id="signin-password-error"></span>
+        </div>
+
+        <div class="form-data">
+          <button onclick="location.href='profile.html'" type="button" class="submit-btn" id="submitSignin">SIGN IN</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="signin-signup.js"></script>
+</body>
+</html>

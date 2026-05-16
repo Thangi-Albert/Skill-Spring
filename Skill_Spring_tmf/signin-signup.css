@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --my-gradient-color: linear-gradient(90deg, #7C3AED 0%, #2c60b4 100%);
+  --header-font: outfit, sans-serif;
+  --tag-line-color: black;
+  --active-tab: #2c60b4;
+  --inactive-tab: #6B7280;
+  --active-border: #7C3AED;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fafb;
+}
+
+/* Sign In/Sign Up Container */
+.sign-con {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+
+/* Sign Up/Sign In Header */
+.sign-up-in-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.con-header {
+  font-family: 'Acme', sans-serif;
+  background: var(--my-gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+}
+
+.con-text {
+  color: var(--tag-line-color);
+}
+
+/* Sign Up/Sign In Toggle */
+.sign-up-toggle-con {
+  border: 1px solid #6b728096;
+  border-radius: 5px;
+  display: flex;
+  padding: 2px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.sign-up-toggle, .sign-in-toggle {
+  border: none;
+  background: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 8px 0;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+}
+
+.sign-up-toggle.active, .sign-in-toggle.active {
+  background-color: var(--active-tab);
+  color: white;
+}
+
+/* Hover effects for inactive toggle buttons */
+.sign-up-toggle:hover:not(.active), 
+.sign-in-toggle:hover:not(.active) {
+  background-color: #e0e7ff;
+  color: #2c60b4;
+}
+
+/* Form Content */
+form {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  gap: 10px;
+}
+
+.form-data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  position: relative;
+}
+
+.form-data-alt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.input {
+  border: 2px solid #a53aed4f;
+  outline: none;
+  padding: 6px 10px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: justify;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input:focus {
+  border-color: #7C3AED;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+  outline: none;
+}
+
+.material-icons {
+  position: absolute;
+}
+
+.form-data-student-or-mentor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+#studentormentor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fdsm-con {
+  display: flex;
+  gap: 7px;
+}
+
+
+form.active {
+  display: flex;
+}
+
+/* Submit Button */
+.submit-btn {
+  padding: 8px 12px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  background: var(--my-gradient-color);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transform: translateY(-3px);
+  margin-top: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+}
+
+.submit-btn:active {
+  transform: translateY(0px) scale(0.98);
+}
+
+/* Sign In Form */
+.sign-in-form {
+  min-width: 400px;
+}
+
+/* Errors */
+.errors {
+  color: red;
+  font-size: 12px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .sign-con {
+    width: 90%;
+    max-width: 500px;
+    padding: 15px;
+    margin: 20px auto;
+  }
+  
+  .sign-in-form {
+    min-width: auto;
+    width: 100%;
+  }
+  
+  .form-data-alt {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .data {
+    width: 100%;
+  }
+  
+  .sign-up-toggle, .sign-in-toggle {
+    font-size: 18px;
+    padding: 6px 0;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px 12px;
+  }
+  
+  .con-header {
+    font-size: 22px;
+  }
+  
+  .con-text {
+    font-size: 14px;
+  }
+  
+  .form-data label {
+    font-size: 14px;
+  }
+  
+  .input {
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sign-con {
+    width: 95%;
+    padding: 12px;
+    gap: 10px;
+  }
+  
+  .sign-up-toggle, .sign-in-toggle {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+  
+  .form-data label {
+    font-size: 13px;
+  }
+  
+  .input {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  
+  .submit-btn {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  
+  .fdsm-con {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .con-text {
+    font-size: 11px;
+  }
+  
+  .con-header {
+    font-size: 20px;
+  }
+  
+  .sign-up-in-header {
+    margin-bottom: 10px;
+  }
+  
+  .sign-up-toggle-con {
+    margin-bottom: 5px;
+  }
+  
+  .form-data, .form-data-student-or-mentor {
+    gap: 8px;
+  }
+}
+
+/* Additional small device adjustments */
+@media (max-width: 380px) {
+  .sign-con {
+    width: 98%;
+    padding: 10px;
+  }
+  
+  .sign-up-toggle, .sign-in-toggle {
+    font-size: 14px;
+  }
+  
+  .fdsm-con {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .submit-btn {
+    font-size: 12px;
+  }
+}
